@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react';
+import { FaFacebook, FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const SignUpForm = () => {
@@ -56,8 +57,8 @@ return (
           <br />  
         </div>
         <div>
-            <button type="button" className="btn btn-outline-primary me-2 fw-bold">Continue with Facebook</button>
-            <button type="button" className="btn btn-outline-primary fw-bold">Continue with Google</button>
+            <button type="button" className="btn btn-outline-primary me-2 fw-bold"> <FaFacebook/> Continue with Facebook</button>
+            <button type="button" className="btn btn-outline-primary fw-bold"><FaGoogle/> Continue with Google</button>
           </div>
       </form>
     </div>

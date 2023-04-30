@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { FaFacebook, FaGoogle } from 'react-icons/fa';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -66,10 +67,10 @@ const LoginForm = () => {
   </div>
   <div className="d-flex justify-content-between">
     <Button variant="outline-primary" className="btn btn-block fw-bold mx-2">
-      Continue with Facebook
+     <FaFacebook/> Continue with Facebook
     </Button>
     <Button variant="outline-danger" className="btn btn-block fw-bold mx-2">
-      Continue with Google
+      <FaGoogle/> Continue with Google
     </Button>
   </div>
 </div>
